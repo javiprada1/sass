@@ -1,5 +1,5 @@
 .contenedor, .contenedor-con-altura {
-  width: 1024px;
+  width: 1280px;
 }
 
 h1, h2, h3, p {
@@ -39,19 +39,19 @@ a:focus {
 }
 
 .mitad {
-  width: 512px;
+  width: 640px;
 }
 
 .cuarto {
-  width: 256px;
+  width: 320px;
 }
 
 .octavo {
-  width: 128px;
+  width: 160px;
 }
 
 .decimo {
-  width: 102.4px;
+  width: 128px;
 }
 
 .box {
