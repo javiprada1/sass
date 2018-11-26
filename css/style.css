@@ -1,0 +1,108 @@
+.contenedor, .contenedor-con-altura {
+  width: 1024px;
+}
+
+h1, h2, h3, p {
+  color: red;
+}
+
+.contenedor-con-altura {
+  height: 514px;
+  color: green;
+}
+
+ul {
+  font-size: 14px;
+  color: blue;
+}
+ul ul {
+  font-size: 12px;
+  color: black;
+}
+ul ul ul {
+  font-size: 10px;
+  color: yellow;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: 14px;
+}
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+a:focus {
+  color: red;
+  text-decoration: none;
+}
+
+.mitad {
+  width: 512px;
+}
+
+.cuarto {
+  width: 256px;
+}
+
+.octavo {
+  width: 128px;
+}
+
+.decimo {
+  width: 102.4px;
+}
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.col-2 {
+  width: "50%";
+}
+
+.col-3 {
+  width: "33.3333333333%";
+}
+
+.col-4 {
+  width: "25%";
+}
+
+.col-5 {
+  width: "20%";
+}
+
+.col-6 {
+  width: "16.6666666667%";
+}
+
+.col-7 {
+  width: "14.2857142857%";
+}
+
+.col-8 {
+  width: "12.5%";
+}
+
+.col-9 {
+  width: "11.1111111111%";
+}
+
+.col-10 {
+  width: "10%";
+}
+
+.col-11 {
+  width: "9.0909090909%";
+}
+
+.col-12 {
+  width: "8.3333333333%";
+}
+
+/*# sourceMappingURL=style.css.map */

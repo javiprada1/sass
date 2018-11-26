@@ -1,0 +1,127 @@
+
+//Uso de Variables con Sass
+
+$ancho : 1024px;
+$color-letra : red;
+$altura : 514px;
+
+.contenedor{
+    width: $ancho;
+}
+
+h1,h2,h3,p{
+    color: $color-letra;
+}
+
+.contenedor-con-altura{
+    @extend .contenedor;
+    height: $altura;
+    color: green;
+
+}
+
+
+
+//Uso y declaración de selectores encadenados
+
+ul{
+
+    font-size: 14px;
+    color: blue;
+
+        ul{
+            font-size: 12px;
+            color: black;
+
+            ul{
+                font-size: 10px;
+                color:yellow;
+            }
+        }
+}
+
+
+
+//Uso del &
+
+a{
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover{
+        color: green;
+        text-decoration: underline;
+    }
+    &:focus{
+        color: red;
+        text-decoration: none;
+    }
+
+}
+
+
+
+
+
+
+
+//Uso de operaciones aritméticas
+
+.mitad{
+    width: ($ancho/2);
+}
+
+.cuarto{
+    width: ($ancho/4);
+}
+
+.octavo{
+    width: ($ancho/8);
+}
+
+
+
+
+//Uso de funciones
+
+@function partir($tam,$num_partes){
+
+    @return ($tam/$num_partes);
+}
+
+.decimo{
+    width: partir($ancho,10);
+}
+
+
+
+//mixin
+
+@mixin border-radius($radius) {
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    border-radius:$radius;
+}
+
+.box {@include border-radius(10px);}
+
+
+
+
+//for y while
+
+@for $p from 2 through 12{
+    .col-#{$p}{
+        width:100/$p+"%";
+    }
+
+}
+
+
+//Podemos incluir otros archivos _functions.scss
+//
+//Para más información, visita: https://sass-lang.com/guide
+
+
